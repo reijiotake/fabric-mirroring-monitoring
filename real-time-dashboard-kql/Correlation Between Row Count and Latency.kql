@@ -1,0 +1,2 @@
+MirroredDatabaseTableExecutionLogs
+| project ProcessedRows, ReplicatorBatchLatency, OperationName
