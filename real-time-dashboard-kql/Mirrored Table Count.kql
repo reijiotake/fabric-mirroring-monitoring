@@ -1,0 +1,2 @@
+MirroredDatabaseTableExecutionLogs
+| summarize Count = dcount(SourceTableName)
