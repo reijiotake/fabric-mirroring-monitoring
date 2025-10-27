@@ -1,4 +1,4 @@
-# fabric-mirroring-monitoring
+# KQL for Real-Time Workspace Monitoring of Fabric Mirroring
 
 ![Mirroring Monitoring Dashboard](image/dashboard.png)
 
