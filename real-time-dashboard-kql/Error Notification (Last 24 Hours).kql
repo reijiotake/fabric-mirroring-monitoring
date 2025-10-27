@@ -1,0 +1,12 @@
+let lookback = 1d;
+MirroredDatabaseTableExecutionLogs
+| where Timestamp between (ago(lookback) .. now())
+| where isnotempty(ErrorType)
+| summarize TotalErrors = count()
+| extend Status = iif(TotalErrors == 0, "✅ No errors detected in the last 24 hours", "⚠️ Errors detected")
+| project Status, TotalErrors
+
+
+
+
+
