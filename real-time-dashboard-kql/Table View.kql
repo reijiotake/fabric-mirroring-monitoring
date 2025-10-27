@@ -1,0 +1,19 @@
+MirroredDatabaseTableExecutionLogs
+| extend TimestampJST = datetime_add('hour', 9, Timestamp)
+| extend OperationStartTimeJST = datetime_add('hour', 9, Timestamp)
+| extend OperationEndTimeJST = datetime_add('hour', 9, Timestamp)
+| project
+    TimestampJST,
+    MirroringSourceType,
+    SourceTableName,
+    ItemName,
+    OperationName,
+    OperationStartTimeJST,
+    OperationEndTimeJST,
+    ProcessedRows,
+    ProcessedBytes,
+    ReplicatorBatchLatency,
+    ErrorType,
+    ErrorMessage
+| order by TimestampJST desc
+| take 10
