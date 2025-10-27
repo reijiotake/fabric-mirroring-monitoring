@@ -1,3 +1,0 @@
-MirroredDatabaseTableExecutionLogs
-| summarize TableCount = dcount(SourceTableName) by MirroringSourceType
-| order by TableCount desc
