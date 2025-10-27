@@ -1,0 +1,6 @@
+let lookback = 3h;
+MirroredDatabaseTableExecutionLogs
+| where Timestamp between (ago(lookback) .. now())
+| extend TimestampJST = datetime_add('hour', 9, Timestamp)
+| project TimestampJST, OperationName, ReplicatorBatchLatency
+| order by TimestampJST asc
