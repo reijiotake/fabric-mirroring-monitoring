@@ -1,6 +1,6 @@
 # fabric-mirroring-monitoring
 
-![Mirroring Monitoring Dashboard](images/dashboard.png)
+![Mirroring Monitoring Dashboard](image/dashboard.png)
 
 
 # Fabric Mirroring Monitoring
