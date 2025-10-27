@@ -3,7 +3,6 @@
 ![Mirroring Monitoring Dashboard](image/dashboard.png)
 
 
-# Fabric Mirroring Monitoring
 
 This repository provides a collection of **KQL queries** to monitor **database mirroring in Microsoft Fabric** in **real time**.
 
